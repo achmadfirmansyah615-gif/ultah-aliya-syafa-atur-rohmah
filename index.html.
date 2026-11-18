@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday Aliya ❤️</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+  color: #7b2445;
+  text-align: center;
+  padding: 35px 18px;
+}
+.card {
+  background: white;
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 28px 20px;
+  border-radius: 22px;
+  box-shadow: 0 5px 20px #0002;
+}
+h1 { color: #e75480; }
+button {
+  background: #e75480;
+  color: white;
+  border: 0;
+  padding: 13px 22px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+#surprise { display: none; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Happy Birthday, Aliya! ❤️</h1>
+  <h3>20 November 🎂</h3>
+  <p>Selamat ulang tahun untuk seseorang yang istimewa.</p>
+  <p>Semoga hari-harimu selalu dipenuhi kebahagiaan, kesehatan, dan semua hal baik yang kamu impikan.</p>
+  <button onclick="document.getElementById('surprise').style.display='block'">
+    Buka Kejutan 💗
+  </button>
+  <div id="surprise">
+    <h2>Untuk Aliya ❤️</h2>
+    <p>Terima kasih sudah hadir dan menjadi bagian indah dalam hidupku. Semoga kita bisa terus berbagi cerita dan kebahagiaan.</p>
+    <p>I love you! 💕</p>
+  </div>
+</div>
+</body>
+</html>
