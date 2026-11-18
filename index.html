@@ -1,33 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Happy Birthday Sayangg ❤️</title>
+<title>For My Love ❤️</title>
 
 <style>
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ffc0cb, #ffe4ec, #fbd1dc);
+  background: linear-gradient(135deg, #ffe0e9, #ffc1d3, #fff0f5);
   color: #8b3152;
   text-align: center;
-  padding: 35px 15px;
+  padding: 25px 15px;
 }
 
 h1 {
   font-size: 38px;
   color: #e75480;
   margin-top: 65px;
-  text-shadow: 2px 2px 5px #ffffff;
+  text-shadow: 2px 2px 8px white;
 }
 
 .subtitle {
+  font-size: 15px;
+  color: #a34b6d;
   margin-bottom: 35px;
+}
+
+.heart {
+  font-size: 35px;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
 }
 
 .menu {
@@ -41,26 +54,27 @@ h1 {
 .menu button {
   background: white;
   border: 2px solid #f5a5bd;
-  border-radius: 18px;
+  border-radius: 20px;
   padding: 28px 10px;
   color: #d94b7b;
   font-size: 17px;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 5px 15px #0002;
+  transition: .3s;
 }
 
 .menu button:active {
-  transform: scale(.96);
+  transform: scale(.95);
 }
 
 .content {
   display: none;
-  background: white;
+  background: #fffafd;
   max-width: 500px;
   margin: 25px auto;
   padding: 22px 15px;
-  border-radius: 20px;
+  border-radius: 22px;
   box-shadow: 0 5px 20px #0002;
 }
 
@@ -72,8 +86,8 @@ h1 {
   background: #e75480;
   color: white;
   border: none;
-  border-radius: 20px;
-  padding: 10px 22px;
+  border-radius: 25px;
+  padding: 11px 25px;
   margin-top: 20px;
   cursor: pointer;
   font-size: 15px;
@@ -82,19 +96,44 @@ h1 {
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 12px;
 }
 
-.gallery img {
+.photo-card {
+  background: #fff0f5;
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 0 3px 10px #0002;
+}
+
+.photo-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 12px;
 }
 
+.photo-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #a33d65;
+  padding: 0 4px;
+}
+
 .message {
-  line-height: 1.8;
-  font-size: 16px;
+  line-height: 1.9;
+  font-size: 15px;
+  text-align: center;
+}
+
+.message p {
+  margin-bottom: 18px;
+}
+
+.signature {
+  color: #e75480;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .music {
@@ -102,7 +141,12 @@ h1 {
   margin: 35px auto 0;
   background: white;
   padding: 18px;
-  border-radius: 18px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px #0002;
+}
+
+.music h3 {
+  color: #e75480;
 }
 
 .music iframe {
@@ -112,77 +156,176 @@ h1 {
   border-radius: 12px;
 }
 
+.footer {
+  margin-top: 35px;
+  font-size: 13px;
+  color: #a34b6d;
+}
+
 @media (max-width: 350px) {
-  h1 { font-size: 30px; }
-  .gallery img { height: 140px; }
+  h1 { font-size: 29px; }
+  .photo-card img { height: 140px; }
 }
 </style>
 </head>
 
 <body>
 
-<h1>HAPPY BIRTHDAY SAYANGG ❤️</h1>
-<p class="subtitle">A special day for someone special 🎂</p>
+<div class="heart">❤️</div>
+
+<h1>HAPPY BIRTHDAY SAYANGG</h1>
+
+<p class="subtitle">
+  Hari spesial untuk seseorang yang sangat berarti bagiku.
+</p>
 
 <div class="menu" id="menu">
+
   <button onclick="openContent('photos')">
-    📸<br><br> BUKA FOTO
+    📸<br><br> GALERI KENANGAN
   </button>
 
   <button onclick="openContent('greeting')">
-    💌<br><br> BUKA UCAPAN
+    💌<br><br> SURAT UNTUKMU
   </button>
+
 </div>
 
+<!-- GALERI FOTO -->
 <div class="content" id="photos">
-  <h2>Galeri Kenangan Kita 📸</h2>
-  <p>Beberapa kenangan yang ingin selalu aku simpan ❤️</p>
+
+  <h2>Our Little Memories ❤️</h2>
+
+  <p>
+    Mungkin hanya foto sederhana, tetapi setiap foto
+    menyimpan cerita yang begitu berarti.
+  </p>
 
   <div class="gallery">
-    <img src="IMG-20261118-WA0023.jpg" alt="Kenangan 1">
-    <img src="IMG-20261118-WA0025.jpg" alt="Kenangan 2">
-    <img src="IMG-20261118-WA0026.jpg" alt="Kenangan 3">
-    <img src="IMG-20261118-WA0028.jpg" alt="Kenangan 4">
-    <img src="IMG-20261118-WA0035.jpg" alt="Kenangan 5">
-    <img src="motion_photo_3258928598636456990.jpg" alt="Kenangan 6">
-    <img src="motion_photo_3916680504338192697.jpg" alt="Kenangan 7">
-    <img src="motion_photo_5098505574670298348.jpg" alt="Kenangan 8">
-    <img src="motion_photo_7528715861780236219.jpg" alt="Kenangan 9">
-    <img src="motion_photo_7997016720632540777.jpg" alt="Kenangan 10">
+
+    <div class="photo-card">
+      <img src="IMG-20261118-WA0023.jpg" alt="Kenangan 1">
+      <p>Kalau waktu bisa diulang, aku ingin kembali ke momen-momen indah bersamamu. ❤️</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="IMG-20261118-WA0025.jpg" alt="Kenangan 2">
+      <p>Dari sekian banyak hal indah, kehadiranmu adalah salah satu yang paling aku syukuri.</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="IMG-20261118-WA0026.jpg" alt="Kenangan 3">
+      <p>Aku tidak butuh momen yang sempurna, cukup ada kamu di dalam ceritanya.</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="IMG-20261118-WA0028.jpg" alt="Kenangan 4">
+      <p>Terima kasih sudah menjadi alasan hadirnya banyak senyum dalam hari-hariku. 💗</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="IMG-20261118-WA0035.jpg" alt="Kenangan 5">
+      <p>Semoga senyummu tidak pernah kehilangan alasan untuk bersinar.</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="motion_photo_3258928598636456990.jpg" alt="Kenangan 6">
+      <p>Hal sederhana terasa istimewa ketika dijalani bersama orang yang tepat.</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="motion_photo_3916680504338192697.jpg" alt="Kenangan 7">
+      <p>Di antara banyak kenangan, aku berharap kita masih punya ribuan cerita berikutnya.</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="motion_photo_5098505574670298348.jpg" alt="Kenangan 8">
+      <p>Aku ingin terus belajar menjadi seseorang yang lebih baik untuk kita.</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="motion_photo_7528715861780236219.jpg" alt="Kenangan 9">
+      <p>Terima kasih telah menjadi bagian dari perjalanan hidupku yang begitu berharga.</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="motion_photo_7997016720632540777.jpg" alt="Kenangan 10">
+      <p>Ini bukan sekadar kenangan, tetapi bagian dari cerita yang ingin terus kita lanjutkan. ❤️</p>
+    </div>
+
   </div>
 
-  <button class="back" onclick="goBack()">Kembali</button>
+  <button class="back" onclick="goBack()">Kembali 💗</button>
+
 </div>
 
+<!-- UCAPAN ULANG TAHUN -->
 <div class="content" id="greeting">
-  <h2>Happy Birthday, Sayang! ❤️</h2>
+
+  <div class="heart">💗</div>
+
+  <h2>Happy Birthday, Sayang!</h2>
 
   <div class="message">
+
     <p>
-      Selamat ulang tahun, sayang. Semoga di umur yang baru ini
-      kamu selalu diberi kesehatan, kebahagiaan, dan kemudahan
-      dalam segala hal.
+      Selamat ulang tahun, sayangku. ❤️
+      Hari ini adalah hari yang spesial karena seseorang
+      yang begitu berarti dalam hidupku bertambah usia.
     </p>
 
     <p>
-      Terima kasih sudah hadir dan menjadi bagian indah dalam
-      hidupku. Maaf kalau selama ini masih banyak kesalahan
-      dan kekurangan dariku.
+      Aku berharap di umur barumu ini, semua hal baik
+      selalu datang menghampirimu. Semoga kamu selalu
+      sehat, bahagia, dimudahkan segala urusannya,
+      dan satu per satu impianmu bisa terwujud.
     </p>
 
     <p>
-      Semoga semua impianmu bisa tercapai dan semoga kita
-      selalu punya banyak cerita indah untuk dikenang.
+      Terima kasih sudah hadir dalam hidupku.
+      Terima kasih untuk setiap cerita, tawa,
+      perhatian, dan kenangan yang sudah kita lewati.
+      Maaf jika selama ini aku masih sering melakukan
+      kesalahan dan belum bisa menjadi yang terbaik.
     </p>
 
-    <h3>I love you ❤️</h3>
+    <p>
+      Aku memang tidak bisa menjanjikan semuanya
+      akan selalu sempurna. Tetapi aku ingin terus
+      belajar, memperbaiki diri, dan menghargai
+      setiap kesempatan untuk menciptakan kenangan
+      indah bersamamu.
+    </p>
+
+    <p>
+      Jangan pernah merasa sendiri dalam mengejar
+      impianmu. Aku berharap kamu selalu punya
+      alasan untuk tersenyum dan bangga pada dirimu sendiri.
+    </p>
+
+    <p>
+      Sekali lagi, selamat ulang tahun, sayang.
+      Semoga hari ini menjadi awal dari banyak
+      kebahagiaan baru dalam hidupmu.
+    </p>
+
+    <p class="signature">
+      I Love You, Sayangg. ❤️
+    </p>
+
+    <h3>With Love, Always. 💕</h3>
+
   </div>
 
-  <button class="back" onclick="goBack()">Kembali</button>
+  <button class="back" onclick="goBack()">Kembali 💗</button>
+
 </div>
 
+<!-- MUSIK -->
 <div class="music">
-  <h3>🎵 Lagu Spesial Untukmu</h3>
+
+  <h3>🎵 A Song For You</h3>
+
   <p>Surat Cinta Untuk Starla - Virgoun</p>
 
   <iframe
@@ -192,23 +335,36 @@ h1 {
     allowfullscreen>
   </iframe>
 
-  <small>Tekan tombol putar untuk mendengarkan lagu ❤️</small>
+  <small>
+    Lagu ini untuk menemani hari spesialmu. ❤️
+  </small>
+
+</div>
+
+<div class="footer">
+  Dibuat dengan sepenuh hati untukmu ❤️
+  <p>20 November 🎂</p>
 </div>
 
 <script>
+
 function openContent(id) {
   document.getElementById("menu").style.display = "none";
   document.getElementById("photos").style.display = "none";
   document.getElementById("greeting").style.display = "none";
+
   document.getElementById(id).style.display = "block";
 }
 
 function goBack() {
   document.getElementById("photos").style.display = "none";
   document.getElementById("greeting").style.display = "none";
+
   document.getElementById("menu").style.display = "grid";
 }
+
 </script>
 
 </body>
-</html>
+      </html>
+      
